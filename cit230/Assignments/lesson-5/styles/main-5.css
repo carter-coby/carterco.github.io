@@ -1,0 +1,91 @@
+* { box-sizing: border-box;}
+
+body 
+{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #1D8A99;
+    color: white;
+}
+
+header, nav, main, footer 
+{
+    max-width: 100%;
+    text-align: center;
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #14FFF7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav ul li 
+{
+    color: #7C77B9;
+}
+nav ul li a 
+{
+    color: #7C77B9;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li.active a 
+{
+    color: #7C77B9;
+}
+nav ul li a:hover 
+{
+    color: #14FFF7;
+    background-color: #1D8A99;
+}
+img.sunny
+{
+    width: 80%;
+}
+img.coolimage
+{
+    float: left;
+    width: 100%;
+}
+main 
+{
+    margin-top: 110px;
+}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img 
+{ 
+    
+}
+
+.town-article
+{
+    text-align: left;
+}
+
+.forecast 
+{
+    display: none;
+    clear: right;
+}
+
+footer
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}

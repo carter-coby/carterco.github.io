@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em) 
+{
+
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast { }  /* show the 10-day forecast with the medium view and up */
+    
+    nav ul li
+    {
+        float: left;
+        position: sticky;
+    }
+    
+    nav ul li a
+    {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .forecast
+    {
+        display: contents;
+    }
+    
+    img.sunny
+    {
+        width: 50%;
+        float: right;
+    }
+    
+    img.coolimage
+    {
+        width: 30%;
+        float: left;
+        margin-left: 2%;
+        margin-right: .5%;
+    }
+    
+    div.clear-sunny-float
+    {
+        clear: right;
+    }
+    
+    br.contactbreak
+    {
+        display: none;
+    }
+    
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    main 
+    {
+        margin-top: 30px;
+    }
+    
+    footer
+    {
+        width: 100%;
+    }
+
+  }
