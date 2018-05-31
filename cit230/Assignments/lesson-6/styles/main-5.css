@@ -5,7 +5,7 @@ body
     font-size: 16px;
     font-family: sans-serif;
     font-size: 15px;
-    background-color: #1D8A99;
+    background-color: #2B7A78;
     color: white;
 }
 
@@ -19,45 +19,57 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul.hide {
+    display:none;
+}
 nav button {
-    background-color: transparent;
-    border: none;
-    color: #14FFF7;
-    margin: .2rem 2%;
     font-size: 1.6rem;
+    background-color: #2B7A78;
+    border: none;
+    color: #17252A;
     text-align: left;
+    height: 44px;
 }
 nav ul
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #14FFF7;
+    background-color: #3AAFA9;
     top: 0;
 }
 nav ul li 
 {
-    color: #7C77B9;
+    color: #17252A;
+    text-align: center;
 }
 nav ul li a 
 {
-    color: #7C77B9;
+    color: #17252A;
     font-weight: bold;
     text-decoration: none;
     display: block;
-    padding: .8rem;
-    text-align: center;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.4);
 }
+
 nav ul li.active a 
 {
-    color: #7C77B9;
+    color: #FEFFFF;
+    background-color: rgba(0,0,0,0.1);
 }
+
 nav ul li a:hover 
 {
-    color: #14FFF7;
-    background-color: #1D8A99;
+    background-color: rgba(0,0,0,0.2);
 }
+
 img.sunny
 {
     width: 80%;
@@ -69,8 +81,8 @@ img.coolimage
 }
 main 
 {
-    margin-top: 110px;
     text-align: center;
+    margin-top: 17%;
 }
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
