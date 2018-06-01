@@ -37,6 +37,7 @@
     {
         float: right;
         max-width: 40%;
+        margin-bottom: 50px;
     }
     
     img.coolimage
@@ -57,11 +58,17 @@
         margin-left: auto;
         margin-right: auto;
         clear: right;
+        margin-bottom: 50px;
     }
     
         h2.forecastheader
     {
         clear: right;
+    }
+    
+    h3.Summaryheader
+    {
+        font-size: 2em;
     }
     
     main 
