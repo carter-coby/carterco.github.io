@@ -9,4 +9,10 @@
         display: block;
         padding: .6rem 1rem;
     }
+    
+    img.sunny
+    {
+        max-width: 50%;
+    }
+    
   }

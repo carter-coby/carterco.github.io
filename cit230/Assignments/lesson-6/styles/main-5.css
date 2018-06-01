@@ -48,6 +48,7 @@ nav ul li
 {
     color: #17252A;
     text-align: center;
+    font-family: 'Sunflower', sans-serif;
 }
 nav ul li a 
 {
@@ -79,6 +80,14 @@ img.coolimage
     float: left;
     width: 100%;
 }
+
+img.franklinimg
+{
+    padding-bottom: 50px;
+    width: 50%%;
+    margin: 0;
+}
+
 main 
 {
     text-align: center;
@@ -100,6 +109,25 @@ main figure img
 {
     display: none;
     clear: right;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+
+td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.3em;
 }
 
 footer

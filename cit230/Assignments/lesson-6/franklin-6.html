@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="styles/medium-5.css">
 <link rel="stylesheet" href="styles/large-5.css">
 <link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 <script type="text/javascript" src="scripts/hamburger.js"></script>
 <body>
   <nav>
@@ -25,9 +26,15 @@
   <main>
     <h2>Franklin City Weather</h2>
     <figure>
+        <img class="franklinimg" src="images/franklin-small.jpg" sizes="50vw"
+             srcset="images/franklin-small.jpg 200w,
+                     images/franklin-medium.jpg 600w,
+                     images/franklin-original50.jpg 800w">
     </figure>
     <section class="weather-summary">
-      <h3>Weather Summary</h3>    
+        <div class="sunnydiv">
+      <h3>Weather Summary</h3>
+        <img src="images/sunny.jpg" alt="Sunny image"  class="sunny">
       <div class="highlow">
         <p>High: 90&deg;</p>  
         <p>Low: 66&deg;</p>  
@@ -35,23 +42,22 @@
       <div class="current">
         Sunny
         <br>
-        <picture>
-            <img src="images/sunny.jpg" alt="Sunny image"  class="sunny">
-        </picture>
         <div class="clear-sunny-float"></div>
       </div>   
       <div class="conditions">
         <p>Precipitation: 0&#37;</p>  
         <p>Wind Speed: 5 mph SW</p>  
       </div>
-
+        <br>
+        <br>
+        </div>
     </section>
 
     <section class="forecast">
-      <h3>Ten Day Forecast</h3>
-      <table>
+      <h2 class="forecastheader">Ten Day Forecast</h2>
+      <table class="forecasttable">
         <thead>
-          <tr>
+          <tr class="days">
             <th>Day 1</th>
             <th>Day 2</th>
             <th>Day 3</th>
@@ -65,7 +71,7 @@
           </tr>
 	   </thead>
         <tbody>  
-          <tr>
+          <tr class="degrees">
             <td>89&deg;</td>
             <td>87&deg;</td>
             <td>78&deg;</td>
@@ -100,9 +106,9 @@
       (458) 177-1847 <br class="contactbreak">
       45388 Main St. Dora, PN, US 94857
     </div>
-    <div class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate">5/24/2018</span>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate"></span>
     </div>
   </footer>
-
+<script type="text/javascript" src="scripts/currentdate.js">window.onload = getCurrentDate;</script>
 </body>
 </html>
