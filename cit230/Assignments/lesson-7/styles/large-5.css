@@ -1,0 +1,21 @@
+@media only screen and (min-width: 64em ) {
+    nav ul li
+    {
+    }
+    
+    nav ul li a
+    {
+        padding: .6rem 1rem;
+    }
+    
+    img.sunny
+    {
+        max-width: 100%;
+    }
+    
+            h3.Summaryheader
+    {
+        font-size: 3em;
+    }
+    
+  }
