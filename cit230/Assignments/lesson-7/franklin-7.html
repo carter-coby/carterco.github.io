@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles/normalize.css">
 <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 <script type="text/javascript" src="scripts/hamburger.js"></script>
-<body>
+<body onload="calcWindChill();">
   <nav>
     <button class="hamburger" onclick="testAlert()" id="menubutton">&#9776;</button>
     <ul id="menu" class="hide">
@@ -19,7 +19,7 @@
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
-    	<li><a href="#">Gallery</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
  
@@ -44,7 +44,8 @@
         </div>   
       <div class="conditions">
         <p>Precipitation: 0&#37;</p>  
-        <p>Wind Speed: 5 mph SW</p>  
+        <p>Wind Speed: 5 mph SW</p>
+        <p id="WindChill">Wind Chill:</p>
         </div>
         </div>
             <div>
@@ -111,6 +112,7 @@
     <div class="footer-bar">&copy;2018 | All Rights Reserved | Franklin City Weather | <span id="currentdate"></span>
     </div>
   </footer>
+<script type="text/javascript" src="scripts/windchill.js"></script>
 <script type="text/javascript" src="scripts/currentdate.js">window.onload = getCurrentDate;</script>
 </body>
 </html>
