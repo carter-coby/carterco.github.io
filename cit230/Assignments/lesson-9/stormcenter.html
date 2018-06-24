@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lesson 5 Assignment">
+<title>Franklin Weather</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/rating.js"></script>
+<script src="scripts/loadthanks.js"></script>
+    <body onload="calcWindChill();">
+      <nav>
+        <button class="hamburger" onclick="testAlert()" id="menubutton">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class = "active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>		
+      </nav>
+      <form>
+          <fieldset class="Contact">
+              <legend>Contact Information</legend>
+              <label class="contact">Full Name *<input class="inputbox" type="text" name="Full_Name" required pattern="[A-Za-z ]{5,}\w"></label>
+              <label class="contact">Phone Number *<input class="inputbox" type="tel" name="TelNumber"></label>
+              <label class="contact">Zip Code *<input class="inputbox" type="number" name="Zip"></label>
+              <label class="contact">Email<input class="inputbox" type="text" name="Email" placeholder="johndoe@website.com"></label>
+          </fieldset>
+          <fieldset>
+              <legend>Storm Information</legend>
+              <label class="storm">Storm Date <input type="date" name="Storm_Date"></label>
+              <label class="storm">Storm Type <input list="Storm_Type">
+                  <datalist id="Storm_Type">
+                      <option value="Flash Flood"></option>
+                      <option value="Hail"></option>
+                      <option value="Hurricane"></option>
+                      <option value="Thunderstorm"></option>
+                      <option value="Tornado"></option>
+                  </datalist>
+              </label>
+              <label class="storm">Storm Severity <input type="range" min="1" max="10" value="5" name="Severity" class="slider" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span class="ratingvalue" id="ratingvalue">5</span></label>
+              <label class="storm">Storm Region
+                  <select>
+                      <option value="Select Region..." disabled selected="selected">Select Region...</option>
+                      <option value="Franklin">Franklin</option>
+                      <option value="Greenville">Greenville</option>
+                      <option value="Springfield">Springfield</option>
+                  </select>
+              </label>
+              <div class="storm">Are you in danger?</div>
+              <label class="stormradiolabel"><input class="radio" name="danger" type="radio"> Yes</label>
+              <label class="stormradiolabel"><input class="radio" name="danger" type="radio"> Maybe</label>
+              <label class="stormradiolabel"><input class="radio" name="danger" type="radio"> No</label>
+          </fieldset>
+          <fieldset>
+              <legend>Additional Information</legend>
+              <textarea class="additionalinfo"></textarea>
+          </fieldset>
+          <button type="reset" class="submitbutton" value="Send storm information" onClick="redirect()">Send storm information</button>
+          <p>* indicates that it is a required field</p>
+      </form>
+
+
+
+
+    </body>
+</html>

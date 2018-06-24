@@ -1,0 +1,418 @@
+* { box-sizing: border-box;}
+
+body 
+{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #2B7A78;
+    color: white;
+}
+
+header, nav, main, footer 
+{
+    max-width: 100%;
+    border: 5px solid red;
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav button {
+    font-size: 1.6rem;
+    background-color: #2B7A78;
+    border: none;
+    color: #17252A;
+    text-align: left;
+    height: 44px;
+    width: 100%;
+}
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3AAFA9;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li 
+{
+    color: #17252A;
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+    width: 100%;
+    flex: 1;
+}
+nav ul li a 
+{
+    color: #17252A;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.4);
+}
+
+nav ul li.active a 
+{
+    color: #FEFFFF;
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav ul li a:hover 
+{
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul.hide {
+    display:none;
+}
+
+img.sunny
+{
+    width: 100%;
+}
+img.coolimage
+{
+    float: left;
+    width: 100%;
+}
+
+img.franklinimg
+{
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 0;
+}
+
+main 
+{
+    text-align: center;
+    margin-top: 17%;
+    display: flex;
+    flex-direction: column;
+}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img 
+{ 
+    
+}
+
+.town-article
+{
+    text-align: left;
+}
+
+.flexsummary
+{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flexsummary >div
+{
+    flex: 1;
+}
+
+.forecast 
+{
+    display: none;
+    clear: right;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+
+td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.3em;
+}
+
+
+footer
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+/***********Form CSS***********/
+form
+{
+    margin-top: 50px;
+}
+
+form fieldset
+{
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: .5rem 2%;
+    font-size: 20px;
+}
+
+label
+{
+    font-size: 17px;
+}
+
+form p
+{
+    font-size: 10px;
+}
+
+.slider
+{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+}
+.slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #3AAFA9;
+    cursor: pointer;
+}
+
+.slider::-mox-range-thumb
+{
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.additionalinfo
+{
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.contact
+{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.storm
+{
+    display:block;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+input
+{
+    display: block;
+    height: 44px;
+    width: 100%;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+input.radio
+{
+    display: inline-block;
+    height: 30px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.stormradiolabel
+{
+    display: block;
+    font-size: 22px;
+}
+
+.inputbox
+{
+    margin-top: 4px;
+}
+
+.submitbutton
+{
+    border: none;
+    background-color: #14FFF7;
+    color: black;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    margin-left: 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+.submitbutton:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*********************Gallery CSS************/
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.galleryimg
+{
+    max-width: 100%;
+    padding: 20px;
+}
+
+/******************************Thank You page CSS**************************/
+.thankyouh1
+{
+    margin-top: 50px;
+}
+
+/****************************Home Page CSS********************************/
+.welcomeh1
+{
+    margin-top: 60px;
+}
+
+.welcomeh2
+{
+    text-align: center;
+}
+
+.weatherstory
+{
+    border: solid white 1px;
+    padding: 10px;
+    max-width: 90%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.weatherstory:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mobilehide
+{
+    display: none;
+}
+
+.mobileshow
+{
+    display: inline;
+}
+
+.weatherstoryimg
+{
+    max-width: 100%;
+    padding: 10px;
+}
+
+.citysections
+{
+    text-align: center;
+    line-height: 1;
+    padding-left: 10px;
+    clear: right;
+}
+
+.franklin-home-section
+{
+    border: solid white 1px;
+    max-width: 93%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.franklin-home-section img
+{
+    max-width: 100%;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.franklin-home-section:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeimg
+{
+    width: 80%;
+    padding: 10px;
+}
+
+.greenville-home-section
+{
+    border: solid white 1px;
+    max-width: 93%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.greenville-home-section:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.greenville-home-section img
+{
+    max-width: 100%;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+
+.springfield-home-section
+{
+    border: solid white 1px;
+    max-width: 93%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.springfield-home-section:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.springfield-home-section img
+{
+    max-width: 100%;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.home-section-links
+{
+    text-decoration: none;
+    color: white;
+}
+

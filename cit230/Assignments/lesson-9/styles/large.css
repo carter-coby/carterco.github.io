@@ -1,0 +1,42 @@
+@media only screen and (min-width: 64em ) {
+    nav ul li
+    {
+    }
+    
+    nav ul li a
+    {
+        padding: .6rem 1rem;
+    }
+    
+    img.sunny
+    {
+        max-width: 100%;
+    }
+    
+            h3.Summaryheader
+    {
+        font-size: 3em;
+    }
+    
+    /*Gallery CSS*/
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .galleryimg:hover
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .citysections
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    text-align: center;
+    line-height: .5;
+}
+    
+  }

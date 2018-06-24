@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lesson 5 Assignment">
+<title>Franklin Weather</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+<script type="text/javascript" src="scripts/hamburger.js"></script>
+<script src="scripts/towninfo.js"></script>
+<!--<script src="scripts/weather.js"></script>-->
+<body>
+    <nav>
+        <button class="hamburger" onclick="testAlert()" id="menubutton">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <section>
+        <h1 class="welcomeh1">Welcome to Greenland County weather!</h1>
+        <h2 class="welcomeh2">"Putting the WE in weather"</h2>
+    </section>
+    <a href="franklin-8.html" class="home-section-links">
+    <section class="weatherstory">
+        <img src="images/cool.jpg" alt="Keep cool!" class="weatherstoryimg">
+        <h2 class="storyh2">Franklin Breaks Record</h2>
+        <p>Yesterday, Franklin nearly went back into the winter. At 10:37 PM  broke the all-time cool temperature record in the month of June of 51&deg;F by managing to get a very-cool temperature of just 49&deg;F. Residents of the city mentioned that they were surprised that it was the coldest it had ever been during this time of the year.</p>
+        
+        <p class="mobilehide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas interdum ante, ac varius arcu varius sit amet. Etiam enim sapien, pulvinar vel leo quis, blandit rutrum nibh. Quisque congue vel tellus sed rutrum. Proin fermentum convallis posuere. Etiam nec euismod lectus. Vestibulum sollicitudin vulputate sem, vitae rutrum diam cursus eget. Mauris egestas ultricies nunc, et faucibus mi ullamcorper id. Nam feugiat odio sed iaculis aliquet. Suspendisse egestas, nisl vehicula varius volutpat, leo nisl consequat elit, ut aliquet nibh libero ullamcorper tellus.</p>
+
+        <p class="mobilehide">Etiam finibus porttitor nunc vitae interdum. Praesent in ultricies dolor. Praesent sagittis sem at nisi vestibulum luctus. In tempus sagittis orci lobortis posuere. Nulla nec tellus ante. Nulla gravida odio libero, quis convallis tortor lacinia et. Donec quis vestibulum nisi. Maecenas iaculis arcu accumsan ante tristique facilisis. Vestibulum consectetur elit ex, a eleifend neque pulvinar ac. Vivamus id eleifend urna. Morbi neque nisi, tristique sed aliquam fringilla, sagittis eu risus. Aliquam ultrices pulvinar risus sit amet vulputate.</p>
+
+        <p class="mobilehide">In vel eros sed ligula commodo blandit. Mauris lobortis risus sit amet orci viverra condimentum. Vestibulum et luctus nulla, non pulvinar diam. Etiam ac auctor ipsum, vitae vestibulum nisl. Morbi aliquam scelerisque odio sit amet interdum. Aenean nec gravida augue. Etiam euismod lacinia vestibulum. Cras id eleifend felis. Sed tristique porta congue. Aliquam fringilla sapien quis arcu placerat, et condimentum sem congue. Nulla vitae vulputate lorem. Aliquam facilisis turpis et nibh ultrices, ac faucibus nisl pulvinar. Donec facilisis semper ante, eu feugiat est semper a.</p>
+        
+        <p class="mobileshow">Click here to read the rest of the story!</p>
+    </section>
+    </a>
+    <h1 class="citysectionh1">Current Town Weather/Statistics</h1>
+    <section class="citysections">
+        <a href="franklin-8.html" class="home-section-links">
+            <section class="franklin-home-section">
+            </section>
+        </a>
+        <a href="#" class="home-section-links">
+            <section class="greenville-home-section">
+            </section>
+        </a>
+        <a href="#" class="home-section-links">
+            <section class="springfield-home-section">
+            </section>
+        </a>
+    </section>
+    <section>
+        
+    </section>
+<script>
+    var franklinSection = document.querySelector(".franklin-home-section");
+    var greenvilleSection = document.querySelector(".greenville-home-section");
+    var springfieldSection = document.querySelector(".springfield-home-section");
+</script>
+</body>
+</html>
