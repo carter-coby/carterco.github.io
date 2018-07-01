@@ -1,0 +1,226 @@
+@media only screen and (min-width: 37.5em) 
+{
+
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.weather-summary 
+    {
+        text-align: center;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+    nav {
+        background-color: #3AAFA9;
+    }
+    
+    nav ul.hide {display:flex;}
+
+    nav ul
+    {
+        flex-direction: row;
+    }
+    
+    nav ul li
+    {
+    }
+    
+    nav ul li a
+    {
+        padding: .8rem 1rem;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    
+    section.forecast
+    {
+        display: contents;
+    }
+    
+    img.sunny
+    {
+        float: right;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    img.coolimage
+    {
+        width: 30%;
+        float: left;
+        margin-left: 2%;
+        margin-right: .5%;
+    }
+    
+    img.hotimage
+    {
+        width: 20%;
+        float: left;
+        margin-left: 2%;
+        margin-right: .5%;
+    }
+    
+    br.contactbreak
+    {
+        display: none;
+    }
+    
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+        clear: right;
+        margin-bottom: 50px;
+    }
+    
+        h2.forecastheader
+    {
+        clear: right;
+    }
+    
+    h3.Summaryheader
+    {
+        font-size: 2em;
+    }
+    
+    main 
+    {
+        margin-top: 50px;
+        clear: both;
+    }
+    
+    footer
+    {
+        width: 100%;
+    }
+    
+    .logo
+    {
+        float: left;
+        max-width: 10%;
+        margin: 0% 0% 0% 0%;
+        margin-top: -2.8%;
+        margin-left: .65em;
+    }
+    /*Gallery CSS*/
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .galleryimg
+    {
+        max-width: 100%;
+        padding: 20px;
+
+    }
+    /*    Form CSS*/
+
+    label
+    {
+        max-width: 20%;
+    }
+
+    .additionalinfo
+    {
+        max-width: 30%;
+        font-size: 15px;
+    }
+
+    input
+    {
+        width: 100%;
+    }
+
+    input.contact
+    {
+        width: 20%;
+    }
+
+    input.radio
+    {
+        display: inline;
+        width: 15px;
+        vertical-align: middle;
+    }
+
+    .stormradiolabel
+    {
+        display: block;
+        font-size: 15px;
+        width: 100%;
+        max-width: 6%;
+    }
+
+    .ratingvalue
+    {
+        margin-left: 10px;
+    }
+
+    .submitbutton
+    {
+        margin-left: 5%;
+    }
+
+        /****************** Home Page CSS ***************/
+
+    .weatherstory
+    {
+        display: block;
+        grid-template-columns: auto auto;
+        text-align: justify;
+        align-content: center;
+    }
+
+    .storyh2
+    {
+        text-align: center;
+    }
+    
+    .weatherstoryimg
+    {
+        max-width: 60%;
+        width: 40%;
+        float: right;
+        padding: 10px;
+    }
+    
+    .mobileshow
+    {
+        display: none;
+    }
+    
+    .mobilehide
+    {
+        display: inline;
+    }
+
+    .citysections
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+    }
+
+    .franklin-home-section
+    {
+        border: solid white 1px;
+        max-width: 93%;
+        width: 100%;
+    }
+
+    .welcomeh1
+    {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+    
+    .citysectionh1
+    {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: -50px;
+    }
+
+}
