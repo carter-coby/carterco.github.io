@@ -161,6 +161,11 @@ footer
     margin: 10px;
 }
 
+.hotimage
+{
+    float: left;
+    width: 100%; 
+}
 /***********Form CSS***********/
 form
 {
@@ -295,9 +300,11 @@ input.radio
 }
 
 /****************************Home Page CSS********************************/
+
 .welcomeh1
 {
     margin-top: 60px;
+    text-align: center;
 }
 
 .welcomeh2
@@ -312,6 +319,9 @@ input.radio
     max-width: 90%;
     width: 100%;
     margin-left: 10px;
+    border-radius: 25px;
+    margin: auto;
+    clear: left;
 }
 
 .weatherstory:hover
@@ -343,12 +353,18 @@ input.radio
     clear: right;
 }
 
+.citysectionh1
+{
+    text-align: center;
+}
+
 .franklin-home-section
 {
     border: solid white 1px;
     max-width: 93%;
     width: 100%;
     margin-top: 10px;
+    border-radius: 25px;
 }
 
 .franklin-home-section img
@@ -375,6 +391,7 @@ input.radio
     max-width: 93%;
     width: 100%;
     margin-top: 10px;
+    border-radius: 25px;
 }
 
 .greenville-home-section:hover
@@ -396,6 +413,7 @@ input.radio
     max-width: 93%;
     width: 100%;
     margin-top: 10px;
+    border-radius: 25px;
 }
 
 .springfield-home-section:hover
@@ -414,5 +432,11 @@ input.radio
 {
     text-decoration: none;
     color: white;
+}
+
+.logo
+{
+    width: 50%;
+    margin: 20% 0% 0% 25%;
 }
 

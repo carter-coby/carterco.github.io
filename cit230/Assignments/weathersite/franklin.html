@@ -13,14 +13,16 @@
 <body onload="calcWindChill();">
   <nav includefile="modules/nav.html">		
   </nav>
- 
+     <section includefile="modules/title.html">
+    </section>
   <main>
     <h2>Franklin City Weather</h2>
     <figure>
         <img class="franklinimg" src="images/franklin-small.jpg" sizes="50vw"
              srcset="images/franklin-small.jpg 200w,
                      images/franklin-medium.jpg 600w,
-                     images/franklin-original50.jpg 800w">
+                     images/franklin-original50.jpg 800w"
+             alt="Here's a sample image of Franklin">
     </figure>
     <section class="weather-summary">
       <h3 class="Summaryheader">Weather Summary</h3>
@@ -93,11 +95,13 @@
     </article>		  
   
   </main>
-  <footer includefile="modules/footer.html" id="currentdate">
+  <footer includefile="modules/footer.html">
       <span id="currentdate"></span>
   </footer>
 <script type="text/javascript" src="scripts/windchill.js"></script>
 <script type="text/javascript" src="scripts/currentdate.js">getCurrentDate();</script>
+<script>var menu = document.getElementsByClassName('hide');</script>
+<script src="scripts/wayfinder.js"></script>
 <script src="scripts/include.js"></script>
 <script>window.onload = includeHTML();</script>
 </body>

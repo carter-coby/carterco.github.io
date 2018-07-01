@@ -24,4 +24,6 @@ function includeHTML() {
       return;
     }
   }
+    getCurrentDate();
+    activateNav();
 }

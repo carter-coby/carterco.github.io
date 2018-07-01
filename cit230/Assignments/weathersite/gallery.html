@@ -11,16 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 <script type="text/javascript" src="scripts/hamburger.js"></script>
 <body class="gallerybody">
-    <nav>
-    <button class="hamburger" onclick="testAlert()" id="menubutton">&#9776;</button>
-    <ul id="menu" class="hide">
-    	<li><a href="#">Home</a></li>
-    	<li><a href="franklin-7.html">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm Center</a></li>
-    	<li class="active"><a href="#">Gallery</a></li>
-    </ul>		
+    <nav includefile="modules/nav.html">	
     </nav>
     <main>
         <div class="grid-container">
@@ -50,6 +41,10 @@
             </figure>
         </div>
     </main>
- 
+<footer includefile="modules/footer.html"></footer>
+<script type="text/javascript" src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
 </body>
 </html>

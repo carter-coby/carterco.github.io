@@ -14,10 +14,7 @@
 <!--<script src="scripts/weather.js"></script>-->
 <body>
     <nav includefile="modules/nav.html"></nav>
-    <section>
-        <img src="images/Weather-logo.jpg" class="logo">
-        <h1 class="welcomeh1">Welcome to Greenland County weather!</h1>
-        <h2 class="welcomeh2">"Putting the WE in weather"</h2>
+    <section includefile="modules/title.html">
     </section>
     <a href="franklin.html" class="home-section-links">
     <section class="weatherstory">
@@ -36,15 +33,15 @@
     </a>
     <h1 class="citysectionh1">Current Town Weather/Statistics</h1>
     <section class="citysections">
-        <a href="franklin-8.html" class="home-section-links">
+        <a href="franklin.html" class="home-section-links">
             <section class="franklin-home-section">
             </section>
         </a>
-        <a href="#" class="home-section-links">
+        <a href="greenville.html" class="home-section-links">
             <section class="greenville-home-section">
             </section>
         </a>
-        <a href="#" class="home-section-links">
+        <a href="springfield.html" class="home-section-links">
             <section class="springfield-home-section">
             </section>
         </a>
@@ -57,6 +54,7 @@
     var greenvilleSection = document.querySelector(".greenville-home-section");
     var springfieldSection = document.querySelector(".springfield-home-section");
 </script>
+<script type="text/javascript" src="scripts/currentdate.js"></script>
 <script src="scripts/include.js"></script>
 <script>includeHTML();</script>
 <script src="scripts/wayfinder.js"></script>

@@ -13,16 +13,7 @@
 <script src="scripts/rating.js"></script>
 <script src="scripts/loadthanks.js"></script>
     <body onload="calcWindChill();">
-      <nav>
-        <button class="hamburger" onclick="testAlert()" id="menubutton">&#9776;</button>
-        <ul id="menu" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="franklin-8.html">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li class = "active"><a href="#">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
-        </ul>		
+      <nav includefile="modules/nav.html">		
       </nav>
       <form>
           <fieldset class="Contact">
@@ -68,6 +59,10 @@
 
 
 
-
+<footer includefile="modules/footer.html"></footer>
+<script type="text/javascript" src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
     </body>
 </html>
