@@ -1,0 +1,138 @@
+@media only screen and (min-width: 37.5em) 
+{
+
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.weather-summary 
+    {
+        text-align: center;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+    nav {
+        background-color: #cce8cc;
+        width: 100%;
+        max-width: 100%;
+        clear: left;
+    }
+    
+    nav ul.hide {display:flex;}
+
+    nav ul
+    {
+        flex-direction: row;
+    }
+    
+    nav ul li
+    {
+    }
+    
+    nav ul li a
+    {
+        padding: .8rem 1rem;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    h3.Summaryheader
+    {
+        font-size: 2em;
+    }
+    
+    main 
+    {
+        margin-top: 50px;
+        clear: both;
+    }
+    
+    footer
+    {
+        width: 100%;
+    }
+    /*    Form CSS*/
+
+    label
+    {
+        max-width: 20%;
+    }
+    
+    input
+    {
+        width: 100%;
+    }
+
+    input.radio
+    {
+        display: inline;
+        width: 15px;
+        vertical-align: middle;
+    }
+
+        /****************** Home Page CSS ***************/
+
+    .welcomeh1
+    {
+        text-align: center;
+    }
+
+    .welcomeh2
+    {
+        text-align: center;
+    }
+    
+    .titlehead
+    {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 20%;
+    }
+    
+    .logo
+    {
+        max-width: 50%;
+    }
+    
+    .mobileshow
+    {
+        display: none;
+    }
+    
+    .mobilehide
+    {
+        display: inline;
+    }
+    
+    /**************Event CSS *****************/
+    .continentimg
+    {
+        width: 54.5%;
+    }
+    
+    /*************Contact CSS*************************/
+    .map
+    {
+        width: 60%;
+        height: 400px;
+    }
+    
+    /**************Sales CSS********************/
+    .salesimg
+    {
+        float: left;
+        max-width: 20%;
+        margin-right: 10px
+    }
+    
+    /******************** Video CSS ******************/
+    .video
+    {
+        width: 80%;
+    }
+
+}

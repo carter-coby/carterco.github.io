@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Final Project">
+<title>Contact Us</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<body>
+    <section includefile="modules/title.html"></section>
+    <nav includefile="modules/nav.html"></nav>
+    <section>
+        <h1 class="toph1">Contact Us</h1>
+        <h2 class="toph1">We'd love to hear from you!</h2><br>
+        <h2 class="toph1">Fill out the form below to contact us or swing on by the shop!</h2>
+    <section>
+        <h3 class="toph1">The Mountain Spoke</h3>
+        <h3 class="toph1">3950 Valley Commons Dr.</h3>
+        <h3 class="toph1">Bozeman, MT 59715</h3>
+        <h3 class="toph1">Hours</h3>
+        <h5 class="toph1">Monday-Friday 8 AM - 9 PM</h5>
+        <h5 class="toph1">Saturday 8 AM - 11 PM</h5>
+        <h5 class="toph1">Sunday 8 AM - 1 PM</h5>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.93144103551!2d-111.09290618435315!3d45.67227662755577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531975727726" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+            <form class="eventform">
+      <fieldset class="Contact">
+          <legend>Contact Information</legend>
+          <label class="contact">Name<input class="inputbox" type="text" name="Full_Name" required pattern="[A-Za-z ]{5,}\w"></label>
+          <label class="contact">Email<input class="inputbox" type="text" name="Email" placeholder="johndoe@website.com" required></label>
+          <label class="contact">Country<input class="inputbox" type="text" name="Country" required></label>
+      </fieldset>
+      <fieldset>
+          <legend>Comment or Question</legend>
+          <textarea class="additionalinfo"></textarea>
+      </fieldset>
+          <button type="reset" class="submitbutton" onClick="redirect()">Submit</button>
+          <p>* indicates that it is a required field</p>
+      </form>
+    </section>
+    <section>
+        <footer includefile="modules/footer.html"></footer>
+    </section>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
+</body>
+</html>

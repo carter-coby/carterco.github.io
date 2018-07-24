@@ -1,0 +1,34 @@
+{
+    "service":[
+        {
+            "type": "Tire Replacement:",
+            "cost": "$10.00 ($5.00 per tire)"
+        },
+        {
+            "type": "Brake Replacement:",
+            "cost": "$15.00 (Front and Back)"
+        },
+        {
+            "type": "Brake Upgrade:",
+            "cost": "$40.00 (Front and Back)"
+        },
+        {
+            "type": "Frame Repair:",
+            "cost": "$20.00"            
+        },
+        {
+            "type": "Frame Replacement/Upgrade:",
+            "cost": "$50.00"
+        },
+        {
+            "type": "Tire Alignment:",
+            "cost": "$20.00"
+        },
+        {
+            "type": "Rim Repair/Replacement:",
+            "cost": "$35.00"
+            
+        }
+    ]
+
+}

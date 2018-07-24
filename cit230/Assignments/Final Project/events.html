@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Final Project">
+<title>Biking Events</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<body>
+    <section includefile="modules/title.html"></section>
+    <nav includefile="modules/nav.html"></nav>
+    <section>
+        <h1 class="ATh1">Events</h1>
+        <h2 class="ATh1">There's so much going on! Don't worry, we'll help you keep up in the biking world, both with events and each other!</h2>
+    </section>
+    <section class="continental-divide">
+        <h2>Biking the Continental Divide</h2>
+        <p>Grab your helmet and cycle on over to the 27th Annual “Cycle the Continent Divide!” Mark your calendars for June 9-16! This biking excursion will take you over 500 miles of varying terrain Bozeman, Montana to Plentywood, Montana. Basic requirements and supplies include:</p>
+        <ul>
+            <li>Mountain Bike (At least 5 gears)</li>
+            <li>Navigation Device</li>
+            <li>Camping gear (Tent, camp stove, sleeping bag, etc.)</li>
+            <li>Expert biking ability</li>
+            <li>Food and Water for at least 5 days</li>
+        </ul>
+        <p>The cost is $75 dollars per person or $350 for a group of 5+. The more people you bring, the more you save!</p>
+        <p>This event has been around for almost as long as we have! 5 days of cycling along a beautiful mountain range. You'll get to see everything from cool mountain streams, high treetops, and incredible cliffs and mountainsides. People from all over travel here to bike the route and see what everyone in biking dreams of seeing. It's a trip of a lifetime that you don't want to miss!</p>
+        <img src="images/continentaldivide.JPG" alt="Here's where the continent divides." class="continentimg"><br>
+        <h2 class="ATh1">Interested? Fill out the form below to sign up!</h2>
+    </section>
+    <section class="eventform-section">
+    <div class="wrappingdiv">
+    <form class="eventform">
+      <fieldset class="Contact">
+          <legend>Contact Information</legend>
+          <label class="contact">Full Name*<input class="inputbox" type="text" name="Full_Name" required pattern="[A-Za-z ]{5,}\w"></label>
+          <label class="contact">Phone Number*<input class="inputbox" type="tel" name="TelNumber" required placeholder="(123) 456-7890"></label>
+          <label class="contact">Email*<input class="inputbox" type="text" name="Email" placeholder="johndoe@website.com" required></label>
+          <label class="contact">Date of Birth*<input class="inputbox" type="text" name="DOB" placeholder="mm/dd/yyyy" required></label>
+          <label class="contact">Home State/Country<input class="inputbox" type="text" name="Home_State" required></label>
+      </fieldset>
+      <fieldset>
+          <legend>Special Accommodations or Requests</legend>
+          <textarea class="additionalinfo"></textarea>
+      </fieldset>
+          <button type="reset" class="submitbutton" onClick="redirect()">Register</button>
+          <p>* indicates that it is a required field</p>
+      </form>
+    </div>
+    </section>
+    <section>
+        <br>
+        <footer includefile="modules/footer.html"></footer>
+    </section>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
+</body>
+</html>

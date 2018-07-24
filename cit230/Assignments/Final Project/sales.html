@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Final Project">
+<title>Sales</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        toggleMerax = function(){
+            if($('#meraxsection').css('display') === 'block'){
+                $('#meraxsection').css('display', 'none');
+            }
+            else{
+                $('#meraxsection').css('display', 'block');
+            }
+        }
+        toggleKent = function(){
+            if($('#kentsection').css('display') === 'block'){
+                $('#kentsection').css('display', 'none');
+            }
+            else{
+                $('#kentsection').css('display', 'block');
+            }            
+        }
+        toggleEagle = function(){
+            
+            if($('#eaglesection').css('display') === 'block'){
+                $('#eaglesection').css('display', 'none');
+            }
+            else{
+                $('#eaglesection').css('display', 'block');
+            }
+        }
+        $('#merax').on("click", toggleMerax);
+        $('#kent').on("click", toggleKent);
+        $('#eagle').on("click", toggleEagle);
+    });
+</script>
+<body>
+    <section includefile="modules/title.html"></section>
+    <nav includefile="modules/nav.html"></nav>
+    <h2 class="ATh1">Bikes for Sale</h2>
+    <h2 class="ATh1">We both sell and rent! You name it, we've got it in stock! Check out a few of our options below!</h2>
+    <section class="accordionsection">
+    <button id="merax" class="accordion">Merax Falcon</button>
+        <section id="meraxsection" class="specsection">
+            <h2>Merax Falcon</h2>
+            <img src="images/bike3.jpg" alt="Merax Falcon" class="salesimg">
+            <p>This mountain bike is built to be used both on terrain and off. The dual shocks allow for easy management of troublesome bumps and steep drops. The light aluminum body and sensitive gears and speeds allow for quick steering and even quicker acceleration and speed. Built in the USA, this bike is perfect for any rider, be they beginner to expert.</p>
+            <p class="specs">Specifications:</p>
+            <ul>
+                <li>Aluminum Frame</li>
+                <li>21 Speeds</li>
+                <li>26" wheels</li>
+                <li>Pull brakes</li>
+                <li>Front and Rear Suspension</li>
+                <li>Weight Limit: 330 lbs</li>
+            </ul>
+    </section>
+    <button id="kent" class="accordion">Kent Super 20</button>
+    <section id="kentsection" class="specsection">
+            <h2>Kent Super 20</h2>
+            <img src="images/bike2.jpg" alt="Kent Super 20" class="salesimg">
+            <p>This bike is the perfect starting mountain bike for children of all ages. Featuring dual rear suspension, your child will hardly feel they are even moving at all! The kickstand featured in the back makes it impossible for them to hit while pedaling, and the hand brakes have been perfectly crafted to respond to even the lightest touch.</p>
+            <p class="specs">Specifications:</p>
+            <ul>
+                <li>Aluminum Frame</li>
+                <li>7 Speeds</li>
+                <li>20" wheels</li>
+                <li>Pull brakes</li>
+                <li>Front and Rear Suspension w/ built-in seat suspension</li>
+                <li>Weight Limit: 200 lbs</li>
+            </ul>
+    </section>
+    <button id="eagle" class="accordion">DynaCraft Alpine Eagle</button>
+    <section id="eaglesection" class="specsection">
+            <h2>DynaCraft Alpine Eagle</h2>
+            <img src="images/bike1.jpg" alt="Kent Super 20" class="salesimg">
+            <p>A woman isn't a biker without this bike. Originally designed for racing, the Alpine Eagle was then converted into a hybrid, able to be used both on the road and on the trail. The front suspension has been tuned to allow for big rocks and small bumps alike. It also features a highly durable frame that can withstand any weather or wear.</p>
+            <p class="specs">Specifications:</p>
+            <ul>
+                <li>Steel Frame</li>
+                <li>21 Speeds</li>
+                <li>26" wheels</li>
+                <li>V brakes</li>
+                <li>Front Suspension<li>
+                <li>Weight Limit: 300 lbs</li>
+            </ul>
+    </section>
+    </section>
+    <section>
+        <footer includefile="modules/footer.html"></footer>
+    </section>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
+</body>
+</html>

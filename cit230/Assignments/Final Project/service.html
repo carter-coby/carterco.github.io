@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Final Project">
+<title>Services</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="scripts/hamburger.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $.getJSON('data/servicedata.json', function(data){
+              $.each(data.service, function(i, f){
+                  var row = "<tr>" + "<td>" + f.type + "</td>" + "<td>" + f.cost + "</td>" + "</tr>"
+                  $(row).appendTo("#servicetable tbody");
+            });
+        });
+    });    
+</script>
+<body>
+    <section includefile="modules/title.html"></section>
+    <nav includefile="modules/nav.html"></nav>
+    <section class="servicetopsection">
+        <h1 class="ATh1">Services</h1>
+        <h2 class="ATh1">We sell, but we also serve! Let our experts will help take care of you and your bicycle as quickly as possible.</h2>
+    </section>
+    <section class="servicetablesection">
+    <table id="servicetable" class="servicetable">
+        <tr></tr>
+    </table>
+    </section>
+    <section>
+        <br>
+        <footer includefile="modules/footer.html"></footer>
+    </section>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/include.js"></script>
+<script>includeHTML();</script>
+<script src="scripts/wayfinder.js"></script>
+</body>
+</html>
