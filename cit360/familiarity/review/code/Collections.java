@@ -36,6 +36,7 @@ public class Collections {
         //5.) Clear the list
         list.clear();
         System.out.println("The ArrayList has been cleared. It is now empty:" + list);
+        System.out.println("");
         
         //6.) Sets don't accept duplicates and store data randomly
         //Use a set if you have a bunch of data to check for duplicates
@@ -50,6 +51,7 @@ public class Collections {
         System.out.println("The current set values are:" + setexample);
         setexample.clear();
         System.out.println("Set cleared:" + setexample);
+        System.out.println("");
         
         //7.) Trees don't accept duplicates and sorted into ascending order
         //Use a tree if you have a large amount of data that you want sorted
@@ -61,6 +63,28 @@ public class Collections {
         tree.add(4);
         tree.add(4);
         System.out.println("The Tree set has the following values: " + tree);
+        System.out.println("");
+        
+        //8.) Maps provide key-value association. Lets you retrive and update
+        //based on the keys. Use it for things like error codes and descriptions
+        Map<String,Integer> map = new HashMap<String,Integer>();
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
+        map.put("Four", 4);
+        
+        Set<Map.Entry<String,Integer>> set = map.entrySet();
+        for(Map.Entry<String,Integer> me:set)
+        {
+            System.out.println("Key:" + me.getKey() + " Value:" + me.getValue());
+        }
+        System.out.println("");
+        map.replace("Four", 5);
+        System.out.println("The key Four now has a new value of 5.");
+        for(Map.Entry<String,Integer> me:set)
+        {
+            System.out.println("Key:" + me.getKey() + " Value:" + me.getValue());
+        }
     }
     
 }
